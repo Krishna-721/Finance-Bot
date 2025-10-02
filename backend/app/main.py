@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.config import get_settings
-from app.routes import auth, transactions
+from app.routes import auth, transactions, chat
 
 settings = get_settings()
 
@@ -23,6 +23,7 @@ app.add_middleware(
 # Include routers
 app.include_router(auth.router)
 app.include_router(transactions.router)
+app.include_router(chat.router)
 
 @app.get("/")
 def root():

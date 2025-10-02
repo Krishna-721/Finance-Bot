@@ -1,9 +1,5 @@
-
-"""
-Run this script once to create all tables in the database
-"""
 from app.db import engine, Base
-from app.models import User, Transaction  # Import all models here
+from app.models import User, Transaction, ChatMessage  # Import all models here
 
 def create_tables():
     """
