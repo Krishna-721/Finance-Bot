@@ -1,0 +1,207 @@
+# ============================================
+# Python
+# ============================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+venv/
+env/
+ENV/
+fin_bot_env/
+*.venv
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# ============================================
+# Environment Variables & Secrets
+# ============================================
+
+# CRITICAL: Never commit sensitive data!
+.env
+.env.local
+.env.*.local
+*.env
+
+# Backup files
+*.bak
+*.swp
+*.swo
+*~
+
+# ============================================
+# IDE / Editor Files
+# ============================================
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# ============================================
+# Operating System Files
+# ============================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+*~
+.directory
+
+# ============================================
+# Database Files
+# ============================================
+
+# SQLite (if you use it for testing)
+*.db
+*.sqlite
+*.sqlite3
+
+# MySQL dumps
+*.sql
+*.dump
+
+# ============================================
+# Logs
+# ============================================
+
+*.log
+logs/
+*.log.*
+
+# ============================================
+# Temporary Files
+# ============================================
+
+tmp/
+temp/
+*.tmp
+
+# ============================================
+# Node.js (for future frontend)
+# ============================================
+
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# ============================================
+# Frontend Build Files (React)
+# ============================================
+
+build/
+dist/
+.next/
+out/
+
+# ============================================
+# Machine Learning Models (when you add ML)
+# ============================================
+
+*.pkl
+*.h5
+*.joblib
+*.model
+models/
+checkpoints/
+
+# ============================================
+# Jupyter Notebooks (if you use them)
+# ============================================
+
+.ipynb_checkpoints/
+*.ipynb
+
+# ============================================
+# Documentation
+# ============================================
+
+# Keep docs but ignore generated files
+docs/_build/
+site/
+
+# ============================================
+# Project Specific
+# ============================================
+
+# Test data
+test_data/
+sample_data/
+
+# Backup folders
+backups/
+old/
+
+# API keys (if stored separately)
+*_keys.txt
+secrets/
+credentials/
+
+#----
