@@ -1,0 +1,76 @@
+About : This is a financial chatbot that helps users to 
+track their income, expenses, and give them financial advice
+or the related
+
+Tech Stack : Backend-> Python, fastapi, sqlalchemy, jwt, Bcrypt
+             Frontend-> Lets think about it in the future.
+
+Backend flow -->  
+    1. User Management: Register, login, maintain sessions
+    2. Data Storage: Save expenses, income, categories
+    3. Business Logic: Calculate totals, analyze spending patterns
+    4. Chatbot Intelligence: Process natural language, give recommendations
+    5. Security: Protect user data, validate inputs 
+    Optional can add the analytics of the the quaterly/anually/monthly savings or losses 
+
+
+[Frontend sends data] 
+    ↓
+[UserCreate validates it] ← If invalid, reject immediately
+    ↓
+[Save to database]
+    ↓
+[UserResponse formats output] ← No password included!
+    ↓
+[Send back to frontend]
+
+For hashig
+Using Bcrypt we hash the password and store it in the database
+Bcrypt is an algo to hash passwords securly. It is  slow and
+resistant to brute force attacks
+
+Using JWT Tokens for auth
+Working of JWT Tokens : 
+    Create token with user_id: create_access_token({"sub": user_id})
+    Send token to frontend
+    Frontend includes token in every request
+    Backend verifies token: verify_token(token)
+
+
+Progress -> 
+    User registration with validation
+    Secure login with JWT tokens
+    Password hashing with bcrypt
+    Token-based session management
+    ✅ Database Design
+
+    Properly structured models
+    Foreign key relationships
+    Timestamps and tracking
+    ✅ Transaction Management (Full CRUD)
+
+    ✅ Create - Add income/expenses
+    ✅ Read - Get all transactions, get by ID, filter by type/category
+    ✅ Update - Modify transactions
+    ✅ Delete - Remove transactions
+    ✅ Security Features
+
+    Protected routes (JWT verification)
+    User data isolation (users only see their own data)
+    Password never exposed in responses
+    Token expiration handling
+    ✅ Professional Architecture
+
+    Models (database layer)
+    Schemas (validation layer)
+    Services (business logic)
+    Routes (API endpoints)
+    Proper separation of concerns
+    ✅ Data Features
+
+    Financial summary (income, expenses, net savings)
+    Filtering and pagination
+    Input validation with Pydantic
+    Error handling
+                
+
