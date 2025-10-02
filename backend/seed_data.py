@@ -17,7 +17,7 @@ USERS = [
     },
     {
         "email": "bob@example.com",
-        "password": "bob123",
+        "password": "smithysmudge",
         "full_name": "Bob Smith"
     },
     {
