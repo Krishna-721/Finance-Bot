@@ -1,7 +1,7 @@
 from fastapi import Depends, status, APIRouter, Query
 from sqlalchemy.orm import Session
 from typing import List, Optional
-from app.db import get_db
+from app.database import get_db
 from app.schemas.transaction import TransactionCreate, TransactionResponse, TransactionSummary, TransactionUpdate
 from app.models.transaction import TransactionType
 from app.models.user import User
@@ -30,7 +30,7 @@ def get_transactions(
     current_user: User = Depends(get_current_user),
     db: Session = Depends(get_db)
 ):
-  transactions=TransactionService.get_user_transaction(db,current_user,category,skip,limit,transaction_type)
+  transactions=TransactionService.get_user_transactions(db,current_user,category,skip,limit,transaction_type)
   return transactions
 
 @router.get("/summary", response_model=TransactionSummary)

@@ -1,4 +1,4 @@
-from app.db import engine, Base
+from app.database import engine, Base
 from app.models import User, Transaction, ChatMessage  # Import all models here
 
 def create_tables():

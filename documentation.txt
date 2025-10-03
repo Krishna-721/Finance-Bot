@@ -74,3 +74,7 @@ Progress ->
     Error handling
                 
 
+After completeing and testing the phase 1, the testing results are 200 OK - ALL the tests passed (More like dummy tests)  
+Its fun developing this site
+
+The next part is to integrate ai into our bot!

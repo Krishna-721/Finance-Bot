@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 from typing import List
-from app.db import get_db
+from app.database import get_db
 from app.schemas.chat import ChatRequest, ChatResponse, ChatHistoryResponse
 from app.models.user import User
 from app.services.chatbot_service import ChatbotService
@@ -20,9 +20,7 @@ def send_message(
 ):
     """
     Send a message to the chatbot and get a response
-    
     **Protected route** - requires authentication
-    
     Examples:
     - "What's my balance?"
     - "How much did I spend on food?"

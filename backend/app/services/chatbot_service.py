@@ -14,7 +14,7 @@ class ChatbotService:
         """Method to process user message and generate repsonse"""
         message_lower = message.lower().strip()
 
-        intent,response = ChatbotService._generate_Response(db,user,message_lower)
+        intent,response = ChatbotService._generate_response(db,user,message_lower)
         chat_message=ChatMessage(
             user_id=user.id,
             user_message=message,
@@ -26,9 +26,9 @@ class ChatbotService:
 
         return{
             "user_message":message,
-            "bot_Response":response,
+            "bot_response":response,
             "intent":intent,
-            "timestamp":datetime()
+            "timestamp":datetime.now()
         }
     
     @staticmethod
